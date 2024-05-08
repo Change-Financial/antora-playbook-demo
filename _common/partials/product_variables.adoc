@@ -1,0 +1,9 @@
+:pss: PaySim
+:cms: Vertexon
+:company: Change Financial
+:company-full: Change Labs Pty. Limited
+:contact-email: mailto:support@changefinancial.com.au[support@changefinancial.com.au]
+:revdate: {docdate}
+ifdef::customer[]
+:revremark: For {customer}
+endif::[]

@@ -1,0 +1,27 @@
+:product: {cms}
+:api: {cms} CMS API
+:Primary_Software_Version: 8.0.4
+:Branding_Product_Suite: Vertexon
+:Branding_Gateway: PaymentHub
+:Branding_Company: Change Labs NZ Pty Limited
+:Branding_Company_short: Change Financial
+:Branding_Global: Change Financial Limited
+:Branding_PP: PayPass
+:Branding_MC: MasterCard
+:Branding_V: Visa
+:Branding_AMex: American Express
+:Branding_ReportData: Report Data Description
+:Branding_EMV: EMV
+:Branding_EMVC: EMV Contactless
+:Branding_PW: PayWave
+:Branding_JCB: JCB
+:Branding_IP: InstallPay
+:Branding_RAM: Risk Alert Manager
+:Branding_MP: Major Purchase
+:Branding_OCT: Online Customer Tracking
+:Branding_xss: XseedServer
+:Branding_xcs: XseedClient
+:Branding_DCI: Diners
+:Branding_UPI: UnionPay International
+:revnumber: {Primary_Software_Version}
+:version-label: Version

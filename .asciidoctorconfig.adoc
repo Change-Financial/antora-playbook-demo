@@ -1,0 +1,5 @@
+// Used by Intellij's Asciidoc plugin for preview
+
+:stylesdir: {asciidoctorconfigdir}/.asciidoctor/css
+:stylesheet: site.css
+:experimental:

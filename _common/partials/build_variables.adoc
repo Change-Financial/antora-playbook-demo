@@ -1,0 +1,7 @@
+:assetsdir: common-assets
+:path-module: docs/modules/{module}
+:path-pages: {path-module}/pages
+:imagesdir: {path-module}/images
+:path-attachments: ../attachments
+:path-examples: ../examples
+:path-partials: ../partials

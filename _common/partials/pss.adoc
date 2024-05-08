@@ -1,0 +1,7 @@
+:product: {pss}
+:api: {pss} API
+:api-service: {api} Service
+:classic: {pss} Classic
+:cps: CPS
+:contact-email: mailto:paysim@changefinancial.com.au[paysim@changefinancial.com.au]
+:version-label: Release

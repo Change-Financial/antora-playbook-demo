@@ -1,0 +1,8 @@
+include::partials/build_variables.adoc[]
+include::partials/product_variables.adoc[]
+ifdef::product-cms[]
+include::partials/cms.adoc[]
+endif::[]
+ifdef::product-pss[]
+include::partials/pss.adoc[]
+endif::[]
