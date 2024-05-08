@@ -29,6 +29,10 @@ jobs:
         node-version: '18'
     - name: Install Antora
       run: npm i antora
+    - name: Populate Git credentials
+      run: |
+        echo https://${{ secrets.GH_PAGE_TEST }}@github.com/Change_Financial/antora-playbook >> ~/.git-credentials
+        chmod 600 $HOME/.git-credentials
     - name: Generate Site
       run: npx antora antora-playbook.yml
     - name: Upload Artifacts
