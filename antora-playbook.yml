@@ -5,6 +5,7 @@ content:
   sources: 
   - url: https://github.com/Change-Financial/gh-pages-test
     branches: HEAD
+    start_path: docs
   - url: https://gitlab.com/antora/demo/demo-component-b.git
     branches: [v2.0, v1.0]
     start_path: docs
