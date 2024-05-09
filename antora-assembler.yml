@@ -8,7 +8,7 @@ section_merge_strategy: 'fuse'
 asciidoc:
   # Attributes to pass to Asciidoctor-PDF
   attributes:
-    site-url: 'https://docs.changefinancial.com'
+    site-url: 'https://change-financial.github.io/antora-playbook-demo'
     source-highlighter: rouge # Adds source code highlighting
     pdf-theme: _pdf/cms-theme.yml # Location of Asciidoctor-PDF theming file
     pdf-fontsdir: _pdf/fonts # Location of custom font for Asciidoctor-PDF
