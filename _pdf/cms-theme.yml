@@ -1,0 +1,4 @@
+extends: ./cf-theme.yml
+title-page:
+  logo:
+    image: image:../_common/images/logo_vertexon_white.png[pdfwidth=50%]

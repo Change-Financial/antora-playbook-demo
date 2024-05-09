@@ -27,11 +27,9 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-    - name: Install Antora
-      run: npm i antora
+    - name: Install required packages
+      run: npm i
     - name: Populate Git credentials
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_PAGE_TEST}}
       run: |
 
         echo https://${{ secrets.GH_PAGE_TEST }}@github.com/Change-Financial/gh-pages-test >> ~/.git-credentials

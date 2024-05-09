@@ -1,0 +1,25 @@
+# This file is used for the configuration of the Antora Assembler.
+
+# root_level = 0: Each top-level bullet point is a chapter in one PDF file.
+# root_level = 1: Each top-level bullet point in nav.adoc gets converted to a separate PDF file.
+root_level: 1
+section_merge_strategy: 'fuse'
+
+asciidoc:
+  # Attributes to pass to Asciidoctor-PDF
+  attributes:
+    site-url: 'https://docs.changefinancial.com'
+    source-highlighter: rouge # Adds source code highlighting
+    pdf-theme: _pdf/cms-theme.yml # Location of Asciidoctor-PDF theming file
+    pdf-fontsdir: _pdf/fonts # Location of custom font for Asciidoctor-PDF
+    toc: '' # Adds Table of Contents
+    toclevels: 6
+    sectnums: '' # Adds section numbering
+    sectnumlevels: 6
+    chapter-signifier: ''
+    pdfwidth: '6cm'
+    scaledwidth: '6cm'
+
+build:
+  # Command to send off to terminal to handle PDF build.
+  command: asciidoctor-pdf

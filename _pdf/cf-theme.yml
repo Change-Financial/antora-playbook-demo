@@ -1,0 +1,211 @@
+extends: default-for-print-with-font-fallbacks
+font: 
+  catalog:
+    merge: true
+    CircularStd:
+      normal: circularstd-normal.ttf
+      italic: circularstd-italic.ttf
+      bold: circularstd-bold.ttf
+      bold_italic: circularstd-bold_italic.ttf
+    Cousine:
+      normal: Cousine-Regular.ttf
+      italic: Cousine-Italic.ttf
+      bold: Cousine-Bold.ttf
+      bold_italic: Cousine-BoldItalic.ttf
+page:
+  layout: portrait
+  margin: [0.75in, 1in, 0.75in, 1in]
+  # foreground-image: image:images/draft.svg[fit=none, pdfwidth=70%]
+  background-image-recto: image:images/prisms_margin_recto.png[position=right, fit=none, pdfwidth=20%]
+  background-image-verso: image:images/prisms_margin_verso.png[position=left, fit=none, pdfwidth=20%]
+base:
+  font-color: #333333
+  font-family: CircularStd
+  font-size: 10
+  line-height-length: 12
+  line-height: $base-line-height-length / $base-font-size
+codespan:
+  font-family: Cousine
+  background-color: #f0f0f0
+  border-offset: 3
+  border-radius: 3
+kbd:
+  font-family: Cousine
+heading:
+  chapter-break-before: always
+  part-break-before: auto
+  font-color: #262626
+  font-size: 17
+  font-style: bold
+  line-height: 1.2
+  h2-border-color: #f36e57
+  h2-border-width: [0, 0, 1, 0]
+  h2-padding: [0, 0, 0.5, 0]
+  h3-font-color: #f36e57
+  h5-font-color: #f36e57
+  min-height-after: auto
+link:
+  font-color: #002FA7
+list:
+  indent: $base-font-size * 1.5
+title-page:
+  background-image: image:images/title_page_background.jpg[]
+  background-color: #0D1539
+  align: center
+  title: 
+    top: 75%
+    font-color: #ffffff
+  subtitle:
+#    display: none
+    font-color: #ffffff
+  authors:
+    display: none
+    font-color: #ffffff
+  revision:
+    font-color: #ffffff
+    delimiter: "\n"
+  logo:
+    top: 65%
+    image: image:../_common/images/logo_change_white.png[pdfwidth=50%]
+header:
+  height: $base-line-height-length * 2.5
+  line-height: 1
+  font-size: 9
+  recto:
+    left:
+      content: '{document-title}'
+    right:
+      content: '{section-or-chapter-title}'
+  verso:
+    left:
+      content: $header-recto-right-content
+    right:
+      content: $header-recto-left-content
+footer:
+  # background-color: #a8d5e6
+  color: #0D1539
+  margin: 0
+  height: $base-line-height-length * 2.5
+  line-height: 1
+  font-size: 9
+  recto:
+    left:
+      content: 'Copyright © Change Financial 2024'
+    right:
+      content: 'Page: {page-number} of {page-count}'
+  verso:
+    left:
+      content: $footer-recto-right-content
+    right:
+      content: 'Published {revdate}'
+admonition:
+  border-radius: 4px
+  background-color: #F0F0F0
+  column-rule-width: 0
+  label:
+    caution:
+      font-color: #f36e57
+    important:
+      font-color: #468399
+    note:
+      font-color: #000000
+    tip:
+      font-color: #4080ec
+    warning:
+      font-color: #0d1539
+  icon:
+    warning:
+      name: fas-exclamation-triangle
+      size: 18
+    important:
+      name: fas-exclamation-circle
+      size: 18
+    note:
+      name: fas-book
+      size: 18
+    tip:
+      name: fas-lightbulb
+      size: 18
+image:
+  align: center
+cover:
+  back:
+    image: image:images/back_cover.png[]
+code:
+  font-family: Cousine
+  font-size: 11px
+table:
+  body:
+    stripe-background-color: #FEFEFE
+  head: 
+    background-color: #D3D3D3
+role:
+  red:
+    font_color: #ff0000
+  bg-red:
+    background-color: #ff0000
+    font_color: #ffffff
+    border-offset: 2
+    border-radius: 1
+  green:
+    font_color: #00aa00
+  bg-green:
+    background-color: #00aa00
+    font_color: #ffffff
+    border-offset: 2
+    border-radius: 1
+  blue:
+    font_color: #0000ff
+  bg-blue:
+    background-color: #0000ff
+    font_color: #ffffff
+    border-offset: 2
+    border-radius: 1
+  cyan:
+    font_color: #00cccc
+  bg-cyan:
+    background-color: #00cccc
+    font_color: #ffffff
+    border-offset: 2
+    border-radius: 1
+  pink:
+    font_color: #cc00cc
+  bg-pink:
+    background-color: #cc00cc
+    font_color: #ffffff
+    border-offset: 2
+    border-radius: 1
+  cf-orange:
+    font_color: #f36e57
+  bg-cf-orange:
+    background-color: #f36e57
+    font_color: #fff
+    border-offset: 2
+    border-radius: 1
+  cf-night-blue:
+    font_color: #0D1539
+  bg-cf-night-blue:
+    background-color: #0D1539
+    font_color: #fff
+    border-offset: 2
+    border-radius: 1
+  cf-light-grey:
+    font_color: #f0f0f0
+  bg-cf-light-grey:
+    background-color: #f0f0f0
+    border-offset: 2
+    border-radius: 1
+  cf-royal-blue:
+    font_color: #4080ec
+  bg-cf-royal-blue:
+    background-color: #4080ec
+    font_color: #fff
+    border-offset: 2
+    border-radius: 1
+  cf-turquoise-grey:
+    font_color: #468399
+  bg-cf-turquoise-grey:
+    background-color: #468399
+    font_color: #fff
+    border-offset: 2
+    border-radius: 1

@@ -1,0 +1,89 @@
+extends: base
+font: 
+  catalog:
+    merge: false
+    CircularStd:
+      normal: circularstd-normal.ttf
+      italic: circularstd-italic.ttf
+      bold: circularstd-bold.ttf
+      bold_italic: circularstd-bold_italic.ttf
+page:
+  layout: portrait
+  margin: [0.75in, 1in, 0.75in, 1in]
+base:
+  font-color: #333333
+  font-family: CircularStd
+  font-size: 10
+  line-height-length: 12
+  line-height: $base-line-height-length / $base-font-size
+heading:
+  font-color: #262626
+  font-size: 17
+  font-style: bold
+  line-height: 1.2
+link:
+  font-color: #002FA7
+list:
+  indent: $base-font-size * 1.5
+title-page:
+  align: right
+  title: 
+  logo:
+    top: 30%
+    image: image:../_common/images/logo_change_navy.png[pdfwidth=50%]
+header:
+  height: $base-line-height-length * 2.5
+  line-height: 1
+  border-color: #0D1539
+  font-size: 9
+  recto:
+    left:
+      content: '{document-title}'
+    right:
+      content: '{section-or-chapter-title}'
+  verso:
+    left:
+      content: $header-recto-right-content
+    right:
+      content: $header-recto-left-content
+footer:
+  height: $base-line-height-length * 2.5
+  line-height: 1
+  font-size: 9
+  border-color: #0D1539
+  recto:
+    left:
+      content: 'Copyright © Change Financial 2022'
+    right:
+      content: 'Page: {page-number} of {page-count}'
+  verso:
+    left:
+      content: $footer-recto-right-content
+    right:
+      content: 'Published {revdate}'
+admonition:
+  font-style: italic
+  label:
+    warning: 
+      font-color: #F36E57
+    important:
+      font-color: #468399
+    note:
+      font-color: #4094EC
+    tip:
+      font-color: #F0F0F0 
+  icon:
+    warning:
+      name: fas-exclamation-triangle
+      size: 18
+    important:
+      name: fas-exclamation-circle
+      size: 18
+    note:
+      name: fas-book
+      size: 18
+    tip:
+      name: fas-lightbulb
+      size: 18
+image:
+  align: center

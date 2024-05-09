@@ -1,0 +1,3 @@
+extends: ./pss-theme.yml
+page:
+  foreground-image: image:images/draft.svg[fit=none,width=70%]

@@ -1,3 +1,8 @@
+antora:
+  extensions:
+    - '@antora/lunr-extension'
+    # - '@antora/pdf-extension'
+    
 site:
   title: Antora Docs
   start_page: component-b::index.adoc 
