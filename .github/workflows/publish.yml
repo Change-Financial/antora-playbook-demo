@@ -31,7 +31,6 @@ jobs:
       run: npm i
     - name: Populate Git credentials
       run: |
-
         echo https://${{ secrets.GH_PAGE_TEST }}@github.com/Change-Financial/gh-pages-test >> ~/.git-credentials
         chmod 600 $HOME/.git-credentials
     - name: Generate Site
