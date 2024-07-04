@@ -11,7 +11,7 @@ site:
 content:
   sources: 
   - url: https://github.com/Change-Financial/gh-pages-test
-    branches: [new-release, apple-wallet]
+    branches: main
     start_path: docs
 ui: 
   bundle:
