@@ -5,11 +5,13 @@ antora:
     
 site:
   title: Antora Docs
+  url: https://github.com/Change-Financial/antora-playbook-demo
   start_page: github-pages-test::index.adoc 
+  
 content:
   sources: 
   - url: https://github.com/Change-Financial/gh-pages-test
-    branches: HEAD
+    branches: [main, new-release, apple-wallet]
     start_path: docs
 ui: 
   bundle:
